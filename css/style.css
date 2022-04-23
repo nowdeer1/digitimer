@@ -1,0 +1,123 @@
+@charset "utf-8";
+
+.controller {
+    text-align: center  ;
+}
+
+div.dispScreen {
+    position: fixed;
+    left : 20%;
+    top : 20%;
+    transform: translateX(-50%)
+               translateY(-50%);
+    font-family: 'Reggae One', cursive;
+    color : #FFFFFF;
+    background-color: #000000;
+    padding: 10px;
+    width : 200px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    display : flex ;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+
+p {
+    border: 1px solid;
+}
+
+.addInf{
+    width :25%;
+    display : flex ;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+
+.TOL, .Foul {
+    color : #FFFFFF;
+    font-size : 10px;
+    width : 50%;
+    text-align: right;
+}
+
+.count{
+    text-align: center;
+    width : 50%;
+}
+
+.Score {
+    color : #FFFFFF;
+    font-size : 20px;
+    width : 20%;
+    padding-right : 5%;
+    text-align: right;
+}
+
+.Name {
+    color : #FFFFFF;
+    width :45%;
+    font-size : 20px;
+    vertical-align:middle;
+    text-align: justify;
+}
+
+#timer{
+    display: none;
+}
+
+.timer{
+    font-size: 25px;
+    color: #FF0000;
+    width : 80%;
+    margin-left: auto;
+    margin-right: 0;
+    text-align : center;
+}
+
+.periodDisp{
+    font-size: 15px;
+    text-align : center;
+    width : 20%;
+    height : 30px;
+    vertical-align: middle;
+}
+
+.description{
+    font-size: 7px;
+}
+
+
+.btn {
+  border: 2px solid #000;
+  border-radius: 0;
+  background: #fff;
+  width : 5%;
+  height : 22px;
+  text-align : center;
+}
+
+#changePeriod{
+    text-align : center;   
+}
+
+.btn:hover {
+  color: #fff;
+  background: #f56500;
+}
+
+.pList {
+  border: 2px solid #000;
+  border-radius: 0;
+  background: #fff;
+  width : 5%;
+  height : 22px;
+}
+
+.deadBtn {
+  border: 2px solid #000;
+  border-radius: 0;
+  background: #444444;
+  width : 5%;
+  height : 22px;
+}
