@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>DigiTimer</title>
+    <link rel="stylesheet" type="text/css" href="css\style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Reggae+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="dispScreen">
+        <div class="periodDisp" id="periodDisp">1Q</div>
+        <div class="timer" id="timer">10:00:000</div>
+        <div class="timer" id="timerDisp">10:00</div>
+        <div class="teamA Name" id="teamAName">TEAM A</div>
+        <div class="teamA Score" id="teamAscore">0</div>
+        <div class="teamA addInf">
+            <div class="teamA TOL">TOL:</div><div class="teamA TOL count" id="teamATOC">2</div>
+            <div class="teamA Foul">TF:</div><div class="teamA Foul count" id="teamAfoul">0</div>
+        </div>
+        <div class="teamB Name" id="teamBName">TEAM B</div>
+        <div class="teamB Score" id="teamBscore">0</div>
+        <div class="teamB addInf">
+            <div class="teamB TOL">TOL:</div><div class="teamB TOL count" id="teamBTOC">2</div>
+            <div class="teamB Foul">TF:</div><div class="teamB Foul count" id="teamBfoul">0</div>
+        </div>
+    </div>
+    <br>
+    <div class="controller">
+        <span class="description">&ltController&gt</span><br>
+        <span class="description">-Team Name Confguration-</span><br>
+        <input type="text" id="teamANameTx" size="10" maxvalue="6" placeholder="teamName:A">
+        <input type="text" id="teamBNameTx" size="10" maxvalue="6" placeholder="teamName:B"><br>
+        <input type="button" class="btn" name="setNames" id="setNames" value="set"><br>
+        <br>
+        <span class="description">-Change Period-</span><br>
+        <select name="period" class="pList" id="pList">
+            <option value="1Q">1Q</option>
+            <option value="2Q">2Q</option>
+            <option value="HT">HT</option>
+            <option value="3Q">3Q</option>
+            <option value="4Q">4Q</option>
+            <option value="OT">OT</option>
+            <option value="INT">INT</option>
+            <option value="END">END</option>
+        </select>
+        <input type="button" class="btn" name="changePeriod" id="changePeriod" value="set">
+        <br>
+        <br>
+        <span class="description">-Time-</span><br>
+        <input type="button" class="btn" name="start" id="start" value="start">
+        <input type="button" class="btn" name="stop" id="stop" value="stop"><br>
+        <input type="text" id="time" maxvalue="9" size="8" value="10:00:000" placeholder="mm:ss:mmm"><br>
+        <input type="button" class="btn" name="setTimer" id="setTimer" value="set"><br>
+        <br>
+        <span class="description">-Score-</span><br>
+        <input type="button" class="btn" name="teamA+3" class="teamA scoreSum plus3" value="+3" id="teamAP3">
+        <input type="button" class="btn" name="teamA+2" class="teamA scoreSum plus2" value="+2" id="teamAP2">
+        <input type="button" class="btn" name="teamA+1" class="teamA scoreSum plus1" value="+1" id="teamAP1">
+        <input type="button" class="btn" name="teamB+1" class="teamB scoreSum plus1" value="+1" id="teamBP1">
+        <input type="button" class="btn" name="teamB+2" class="teamB scoreSum plus2" value="+2" id="teamBP2">
+        <input type="button" class="btn" name="teamB+3" class="teamB scoreSum plus3" value="+3" id="teamBP3"><br>
+        <input type="button" class="btn" name="teamA-1" class="teamA scoreSum minus1" value="-1" id="teamAM1">
+        <input type="button" class="btn" name="teamB-1" class="teamB scoreSum minus1" value="-1" id="teamBM1">
+        <br>
+        <br>
+        <span class="description">-Timeout-</span><br>
+        <input type="button" class="btn" name="timeOutA" class="teamA timeout use" value="TO" id="teamATOU">
+        <input type="button" class="btn" name="timeOutB" class="teamB timeout use" value="TO" id="teamBTOU"><br>
+        <br>
+        <span class="description">-Foul-</span><br>
+        <input type="button" class="btn" name="foulA+1" class="teamA foul plus1" value="+1" id="teamAFP1">
+        <input type="button" class="btn" name="foulB+1" class="teamB foul plus1" value="+1" id="teamBFP1"><br>
+        <input type="button" class="btn" name="foulA-1" class="teamA foul minus1" value="-1" id="teamAFM1">
+        <input type="button" class="btn" name="foulB-1" class="teamB foul minus1" value="-1" id="teamBFM1"><br>
+        <br>
+        <span class="description">-Reset-</span><br>
+        <input type="button" class="btn" name="reset" class="reset" value="reset" id="reset">
+    </div>
+    <script src="js\main.js"></script>
+</body>
+</html>
